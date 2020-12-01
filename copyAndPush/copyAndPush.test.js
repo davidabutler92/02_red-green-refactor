@@ -8,4 +8,9 @@ describe('copyName', () => {
         expect(newArr)
         .toEqual([1, 2, 3, 4]);
     });
+
+    it('should return a copied array and not mutate original array', () => {
+        expect(number)
+        .toEqual([1, 2, 3])
+    });
 });
