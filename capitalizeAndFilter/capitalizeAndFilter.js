@@ -1,11 +1,10 @@
+const upperCase = arr => {
+    return arr.map(word => word.toUpperCase())
+};
+
 const capitalizeAndFilter = arr => {
-    const newArr = [];
-    for(let i = 0; i < arr.length; i++) {
-        const word = arr[i].toUpperCase();
-        if(word[0] !== 'F')
-        newArr.push(word);
-    };
-    return newArr;
+    const newArr = upperCase(arr);
+    return newArr.filter(word => word[0] !== 'F')
 };
 
 module.exports = {
